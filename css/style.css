@@ -1,9 +1,7 @@
-body{
-    
-}
+/* Navbar */
 
 .nav{
-    /* padding-left: 1vh; */
+    padding-left: 3vw;
     position: fixed;
     overflow: hidden;
     bottom: 0;
@@ -12,37 +10,39 @@ body{
 }
 
 .nav-link{
-    padding: 2vh 8vh;
+    padding: 2vh 12vw;
     color: black;
     font-weight: bold;
 }
 
 .fa-tasks{
-    padding-left: 1vh;
+    padding-left: 7vw;
 }
 
 
-
+/* Create page */
 .create-p{
     background-color: #b3ffff;
     height: 100vh;
-    width:56vh;
+    width:auto;
 }
 
 .dot-c{
     position: absolute;
-    width:100%;
-    height:75vh;
+    width:100vw;
+    height:65vh;
     /* margin-top: -40vh; */
     background-color: white;
     /* clip-path: circle(55%); */
-    clip-path: circle(51.0% at 50% 0);
+    clip-path: circle(55vw at 50% 0);
 }
 
 .clip1{
     position: absolute;
     top:10vh;
-    left: 24vh;
+    left: 43vw;
+    width:18vw;
+    height:10vh;
 }
 
 .save{
@@ -52,20 +52,20 @@ body{
     border: 2px solid grey;
     border-radius: 50%;
     z-index: 1;
-    width:52px;
-    height: 52px;
+    width:8vh;
+    height: 8vh;
     font-weight: 650;
-    font-size: 2.3vh;
-    margin-top: 82vh;
-    margin-left: 25vh;
+    font-size: 2vh;
+    margin-top: 80vh;
+    margin-left: 44vw;
 }
 
 .create{
     position: absolute;
     background-color: #b3ffff;
-    top: 50vh;
-    left: 9vh;
-    width: 37vh;
+    top: 48vh;
+    left: 16vw;
+    width: 69vw;
     height: 22vh;
     border-radius: 10px;
     border: 2px solid grey;
@@ -74,20 +74,37 @@ body{
 .create-b{
     position: absolute;
     background-color: #b3ffff;
-    top: 49vh;
-    left: 8vh;
-    width: 39vh;
-    height: 24vh;
+    top: 47vh;
+    left: 14vw;
+    width: 73vw;
+    height: 24.5vh;
     border-radius: 10px;
     box-shadow: 2px 4px 3px rgba(88,88,88,0.425),
                 -2px -2px 3px white;
 }
 
+.content{
+    position: absolute;
+    width: 100vw;
+    height: 45vh;
+    top:36vh;
+    text-align: center;
+    overflow: auto;
+}
 
-.task-p{
-    background-color: #ffb3b3;
-    height: 100vh;
-    width: 56vh;
+
+/* Create Task and Update page */
+
+.new-b{
+    position: absolute;
+    background-color: #b3ffff;
+    border-radius: 50%;
+    z-index: 0;
+    width:9.5vh;
+    height: 9.5vh;
+    font-weight: 650;
+    margin-top: 79.3vh;
+    margin-left: 42.6vw;
 }
 
 .dot-s1{  
@@ -95,59 +112,45 @@ body{
         drop-shadow(0 4px 3px rgba(88,88,88,0.425));
 }
 
+
+/* Task Page */
+
+.task-p{
+    background-color: #ffb3b3;
+    height: 100vh;
+    width:auto;
+}
+
 .dot-t{
     position: absolute;
-    margin-top:6vh;
-    width:100%;
+    margin-top: 6vh;
+    width:100vw;
     height:75vh;
     background-color: #ffb3b3;
-    clip-path: circle(55%);
+    clip-path: circle(53.3% at 50% 50%);
 }
 
 .clip{
     position: absolute;
-    top:2vh;
-    left: 24vh;
+    top: 4vh;
+    left: 42vw;
+    width: 60px;
+    height: 60px;
 }
 
-.new{
+#task{
     position: absolute;
-    background-color: #b3ffff;
-    border-radius: 50%;
-    border: 2px solid black;
-    z-index: 1;
-    width:52px;
-    height: 52px;
-    font-weight: 650;
-    margin-top: 82vh;
-    margin-left: 25vh;
-}
-
-.new-b{
-    position: absolute;
-    background-color: #b3ffff;
-    border-radius: 50%;
-    z-index: 0;
-    width:62px;
-    height: 62px;
-    font-weight: 650;
-    margin-top: 81.3vh;
-    margin-left: 24.3vh;
-}
-
-.content{
-    position: absolute;
-    width: 56vh;
+    width: 100vw;
     height: 45vh;
-    top: 21vh;
+    top:20vh;
     text-align: center;
     overflow: auto;
 }
 
 .item{
-    width: 50vh;
+    width: 90vw;
     margin-top: 2vh;
-    margin-left:3vh;
+    margin-left:5vw;
     margin-bottom: 1vh;
     font-size: 25px;
     border-radius: 20px;
@@ -156,39 +159,90 @@ body{
                 -2px -2px 3px white;
 }
 
-input[type=checkbox]{
-    width: 3vh;
-    height: 3vh;
-    padding: 0 2vh;
+.new{
+    position: absolute;
+    background-color: #b3ffff;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 1;
+    width:8vh;
+    height: 8vh;
+    font-weight: 650;
+    font-size: 2vh;
+    margin-top: 80vh;
+    margin-left: 44vw;
 }
 
+/* Update page */
 .content-u{
     position: absolute;
-    width: 56.3vh;
+    width: 100vw;
     height: 34vh;
     top: 45vh;
     text-align: center;
     overflow: auto;
 }
 
-.dot-u{
-    position: absolute;
-    width:56.3vh;
-    height:75vh;
-    /* margin-top: -40vh; */
-    background-color: white;
-    /* clip-path: circle(55%); */
-    clip-path: circle(54.0% at 50% 7%);
+input[type=checkbox]{
+    width: 3vh;
+    height: 3vh;
+    padding: 0 2vw;
 }
 
-@media screen and (max-width: 380px){
-    
-    .create-p{
-        height: 100vh;
-        width:56vh;
+
+
+@media screen and (max-width: 310px){
+    .clip{
+        top:5vh
+    }
+}
+
+@media screen and (min-width: 380px){
+    .clip{
+        top:3vh
     }
 
-    .dot-c{
-        width: 100%;
+    #task{
+        height: 42vh;
+        top:22vh
+    }
+
+    .new{
+        margin-top: 81vh;
+    }
+
+    .save{
+        margin-top: 81vh ;
+    }
+
+    .new-b{
+        margin-top:80.3vh
+    }
+}
+
+@media screen and (min-width: 410px){
+    .clip{
+        top:2vh
+    }
+
+    .dot-t{
+        height:78vh;
+        margin-top:5vh;
+    }
+    #task{
+        height: 44vh;
+        top:24vh
+    }
+
+    .new{
+        margin-top: 84vh;
+    }
+
+    .save{
+        margin-top: 84vh ;
+    }
+
+    .new-b{
+        margin-top:83.3vh
     }
 }
