@@ -117,6 +117,12 @@
 
 /* Task Page */
 
+#title{
+    position: absolute;
+    top:15vh;
+    left: 40vw;
+}
+
 .task-p{
     background-color: #ffb3b3;
     height: 100vh;
@@ -197,6 +203,10 @@ input[type=checkbox]{
     .clip{
         top:5vh
     }
+
+    .dot-t{
+        margin-top: 6vh;
+    }
 }
 
 @media screen and (min-width: 380px){
@@ -207,6 +217,10 @@ input[type=checkbox]{
     #task{
         height: 37vh;
         top:22vh
+    }
+
+    .dot-t{
+        margin-top: 5vh;
     }
 
     .new{
@@ -236,7 +250,7 @@ input[type=checkbox]{
     }
 
     .dot-t{
-        height:70vh;
+        height:80vh;
         margin-top:4vh;
     }
     #task{
@@ -255,5 +269,41 @@ input[type=checkbox]{
 
     .new-b{
         margin-top:76.3vh
+    }
+}
+
+@media screen and (max-height:400px){
+    .dot-c{
+        height:30vh;
+        clip-path: circle(52vw at 50% -95%);
+    }
+
+    .new-b{
+        width: 12vh;
+        height: 12vh;
+        margin-top: 73vh;
+        margin-left: 45vw;
+    }
+
+    .save{
+        width: 10vh;
+        height: 10vh;
+        margin-top: 74vh;
+        margin-left: 46vw;
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .create-b{
+        top:46vh;
+    }
+
+    .create{
+        top:47vh;
+    }
+
+    .clip1{
+        width: 50px;
+        height: 50px;
     }
 }
