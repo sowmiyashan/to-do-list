@@ -4,7 +4,7 @@
     padding-left: 3vw;
     position: fixed;
     overflow: hidden;
-    bottom: 4vh;
+    bottom: 0vh;
     width: 100%;
     z-index: 10;
 }
