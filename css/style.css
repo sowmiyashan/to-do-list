@@ -4,7 +4,7 @@
     padding-left: 3vw;
     position: fixed;
     overflow: hidden;
-    bottom: 0;
+    bottom: 4vh;
     width: 100%;
     z-index: 10;
 }
@@ -34,15 +34,17 @@
     /* margin-top: -40vh; */
     background-color: white;
     /* clip-path: circle(55%); */
-    clip-path: circle(55vw at 50% 0);
+    clip-path: circle(52vw at 50% 0);
 }
 
 .clip1{
     position: absolute;
     top:10vh;
     left: 43vw;
-    width:18vw;
-    height:10vh;
+    /* width:18vw;
+    height:10vh; */
+    width: 60px;
+    height: 60px;
 }
 
 .save{
@@ -56,14 +58,14 @@
     height: 8vh;
     font-weight: 650;
     font-size: 2vh;
-    margin-top: 80vh;
+    margin-top: 77vh;
     margin-left: 44vw;
 }
 
 .create{
     position: absolute;
     background-color: #b3ffff;
-    top: 48vh;
+    top: 44vh;
     left: 16vw;
     width: 69vw;
     height: 22vh;
@@ -74,7 +76,7 @@
 .create-b{
     position: absolute;
     background-color: #b3ffff;
-    top: 47vh;
+    top: 43vh;
     left: 14vw;
     width: 73vw;
     height: 24.5vh;
@@ -87,7 +89,7 @@
     position: absolute;
     width: 100vw;
     height: 45vh;
-    top:36vh;
+    top:32vh;
     text-align: center;
     overflow: auto;
 }
@@ -103,7 +105,7 @@
     width:9.5vh;
     height: 9.5vh;
     font-weight: 650;
-    margin-top: 79.3vh;
+    margin-top: 76.3vh;
     margin-left: 42.6vw;
 }
 
@@ -123,16 +125,16 @@
 
 .dot-t{
     position: absolute;
-    margin-top: 6vh;
+    margin-top: 4vh;
     width:100vw;
-    height:75vh;
+    height:73vh;
     background-color: #ffb3b3;
     clip-path: circle(53.3% at 50% 50%);
 }
 
 .clip{
     position: absolute;
-    top: 4vh;
+    top: 2vh;
     left: 42vw;
     width: 60px;
     height: 60px;
@@ -141,7 +143,7 @@
 #task{
     position: absolute;
     width: 100vw;
-    height: 45vh;
+    height: 41vh;
     top:20vh;
     text-align: center;
     overflow: auto;
@@ -169,7 +171,7 @@
     height: 8vh;
     font-weight: 650;
     font-size: 2vh;
-    margin-top: 80vh;
+    margin-top: 77vh;
     margin-left: 44vw;
 }
 
@@ -178,7 +180,7 @@
     position: absolute;
     width: 100vw;
     height: 34vh;
-    top: 45vh;
+    top: 41vh;
     text-align: center;
     overflow: auto;
 }
@@ -199,50 +201,54 @@ input[type=checkbox]{
 
 @media screen and (min-width: 380px){
     .clip{
-        top:3vh
+        top:1vh
     }
 
     #task{
-        height: 42vh;
+        height: 37vh;
         top:22vh
     }
 
     .new{
-        margin-top: 81vh;
+        margin-top: 79vh;
     }
 
     .save{
-        margin-top: 81vh ;
+        margin-top: 79vh ;
     }
 
     .new-b{
-        margin-top:80.3vh
+        margin-top:78.3vh
     }
 }
 
 @media screen and (min-width: 410px){
+
+    .content{
+        top:35vh
+    }
     .clip{
         top:2vh
     }
 
     .dot-t{
-        height:78vh;
-        margin-top:5vh;
+        height:73vh;
+        margin-top:4vh;
     }
     #task{
-        height: 44vh;
-        top:24vh
+        height: 40vh;
+        top:21vh
     }
 
     .new{
-        margin-top: 84vh;
+        margin-top: 79vh;
     }
 
     .save{
-        margin-top: 84vh ;
+        margin-top: 79vh ;
     }
 
     .new-b{
-        margin-top:83.3vh
+        margin-top:78.3vh
     }
 }
