@@ -272,7 +272,7 @@ input[type=checkbox]{
     }
 }
 
-@media screen and (max-height:500px){
+@media screen and (max-height: 500px){
     .dot-c{
         height:30vh;
         clip-path: circle(52vw at 50% -50%);
