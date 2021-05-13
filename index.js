@@ -1,6 +1,9 @@
 var Tasks=[];
 var i=0;
 
+console.log(window.screen.width)
+console.log(window.screen.height)
+
 function addElement(){
     var value = document.getElementById("input").value;
     alert("Task added!!");
