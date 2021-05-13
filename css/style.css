@@ -309,7 +309,7 @@ input[type=checkbox]{
 }
 
 /* Large and extra Large screen */
-@media screen and (min-width: 992px) and (max-height:1000px){
+@media screen and (min-width: 992px){
 
     /* Navbar */
 
@@ -373,7 +373,7 @@ input[type=checkbox]{
 }
 
 
-@media screen and (min-width: 768px) and (max-height:900px){
+@media screen and (min-width: 768px){
     /* Navbar */
 
     .nav{
