@@ -307,3 +307,86 @@ input[type=checkbox]{
         height: 50px;
     }
 }
+
+@media screen and (min-width: 470px){
+
+    /* Navbar */
+
+    .nav{
+        padding-left: 0;
+        width: 45vw;
+        left:30vw;
+    }
+
+    .nav-link{
+        padding: 2vh 6vw;
+    }
+
+    .fa-tasks{
+        padding-left: 0vw;
+    }
+
+    /* Create Page */
+    .dot-c{
+        height:30vh;
+        width: 50vw;
+        left: 25vw;
+        clip-path: circle(17vw at 50% 0%);
+    }
+
+    .clip1{
+        width: 40px;
+        height: 40px;
+        left: 48.5vw;
+    }
+
+    .create-b{
+        width: 30vw;
+        left: 35vw;
+    }
+
+    .create{
+        width: 28vw;
+        left: 36vw;
+    }
+
+    .new-b{
+        margin-top: 73vh;
+        margin-left: 47.5vw;
+    }
+
+    .save{
+        margin-top: 74vh;
+        margin-left: 47.9vw;
+    }
+
+    /* Tasks Page */
+    .dot-t{
+        width: 50vw;
+        left: 25vw;
+    }
+
+    .clip{
+        width: 40px;
+        height: 40px;
+        left: 48vw;
+        top: 4vh;
+    }
+
+    #title{
+        left: 46.7vw;
+    }
+
+    .item{
+        width: 30vw;
+        margin-left: 1vw;
+    }
+
+    /* Update page */
+
+    .content-u{
+        height: 30vh;
+        width: 35vw;
+        left: 34.5vw;
+    }
+}
