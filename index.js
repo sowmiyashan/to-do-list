@@ -3,7 +3,7 @@ var i=0,j=0;
 
 function addElement(){
     var value = document.getElementById("input").value;
-    if(value !== " "){
+    if(value !== ""){
         Tasks[i]=value;
         i++;
         print();
