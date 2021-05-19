@@ -2,7 +2,8 @@ var Tasks=[];
 var i=0,j=0;
 
 function addElement(){
-    var value = document.getElementById("input").value;
+    var v = document.getElementById("input").value;
+    var value = v.trim();
     if(value !== ""){
         Tasks[i]=value;
         i++;
@@ -10,7 +11,7 @@ function addElement(){
         alert("Task Added");
     }
     else{
-        alert("You must write something...");
+        alert("You must write something");
     }
     document.getElementById("input").value="";
 }
