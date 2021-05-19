@@ -1,58 +1,57 @@
 var Tasks=[];
-var i=0;
-
-console.log(window.screen.width)
-console.log(window.screen.height)
+var i=0,j=0;
 
 function addElement(){
     var value = document.getElementById("input").value;
-    alert("Task added!!");
-    Tasks[i]=value;
-    i++;
-
-    var div1 = document.createElement("div");
-    var div2 = document.createElement("div");
-    var t = document.createTextNode(value);
-    console.log(t)
-    div2.appendChild(t);
-    div1.className="item";
-    console.log(div2)
-    div1.appendChild(div2);
-
-
-    var div3 = document.createElement("div")
-    div3.className="item row";
-    var div21 = document.createElement("div")
-    div21.className="col-2";
-    var ip = document.createElement("input")
-    ip.type="checkbox"
-    ip.value=value;
-    div21.appendChild(ip);
-    div3.appendChild(div21);
-
-    var div22 = document.createElement("div")
-    div22.className="col-8"
-    var t1 = document.createTextNode(value)
-    div22.appendChild(t1);
-    div3.appendChild(div22);
-
-    var div23 = document.createElement("div")
-    div23.className="col-2"
-    var i = document.createElement("i");
-    i.className="fa fa-trash"
-    div23.appendChild(i);
-    div3.appendChild(div23);
-
-    console.log(div1)
-    console.log(div3)
-
-    if(value === " "){
-        alert("You must write something...");
+    if(value !== " "){
+        Tasks[i]=value;
+        i++;
+        print();
+        alert("Task Added");
     }
     else{
-        document.getElementById("task").appendChild(div1);
-        document.getElementById("updates").appendChild(div3);
+        alert("You must write something...");
     }
+    document.getElementById("input").value="";
+}
 
-    document.getElementById("input").value=" ";
+function print(){
+    var T_txt=" ", U_txt=" ";
+       
+    Tasks.forEach(add)
+    function add(value){
+        T_txt = T_txt + `<div class="item"><div>${value}</div></div>`+ "\n";
+        U_txt = U_txt + `<div class="item row">
+                            <div class="col-2"><input type="checkbox" id="${value}"></div>
+                            <div class="col-8">${value}</div>
+                            <div class="col-2"><i class="fa fa-trash" onclick={deleteElement(${value})}></i></div>
+                        </div>`
+    }
+    document.getElementById("task").innerHTML = T_txt;
+    document.getElementById("updates").innerHTML = U_txt;
+}
+
+function deleteElement(ele){
+    for(j=0; j< Tasks.length; j++){
+        if(Tasks[j] == ele.id){
+            Tasks.splice(j,1);
+        }
+    }
+    i=Tasks.length;
+    print();
+}
+
+function Onsubmit(){
+    notDone=[];
+    for(j=0; j< Tasks.length; j++){
+        t = document.getElementById(Tasks[j]);
+        if(t.checked == false)
+        {
+            notDone.push(Tasks[j]);
+        }
+        
+    }
+    Tasks=notDone;
+    i=notDone.length;
+    print();
 }
