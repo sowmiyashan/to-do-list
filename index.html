@@ -13,62 +13,71 @@
     <title>To-Do-App</title>
 </head>
 <body>
-
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#create"><i class="fa fa-plus" aria-hidden="true"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tasks"><i class="fa fa-tasks" aria-hidden="true"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#update"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
-        </li>
-    </ul>
-
-    
-    
-    <div class="tab-content">
-
-        <!--Create Page-->
-        <div id="create" class="create-p tab-pane active">
-            <div class="dot-s1">
-                <div class="dot-c"></div>
-                <img src="./images/stamp.png" alt="stamp" class="clip1">
-                <h3 class="content">What is in your mind?</h3>
-                <div class="create-b"></div>
-                <textarea type="text" id="input" class="create"></textarea>
-                <div class="new-b"  style="background-color: #ffb3b3;"></div>
-                <button class="save" onclick={addElement()}>PUSH</button>
+    <div class="container d-flex justify-content-center">
+        <ul class="nav d-flex justify-content-center">
+            <div class="col-4 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="console.log('create')" data-toggle="tab" href="#create"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
             </div>
-        </div>
-
-        <!--Task Page-->
-        <div id="tasks" class="task-p tab-pane">
-            <div class="dot-s1">
-                <div class="dot-t"></div>
-                <img src="./images/stamp.png" alt="stamp" class="clip">
-                <h3 id="title">Tasks</h3>
-                <div  id="task">
-                    
+            <div class="col-4 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tasks"><i class="fa fa-tasks" aria-hidden="true"></i></a>
+                </li>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#update"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+                </li>
+            </div>
+        </ul>
+    
+        
+        
+        <div class="tab-content">
+    
+            <!--Create Page-->
+            <div id="create" class="create-p tab-pane active ">
+                <div class="dot-s1 d-flex justify-content-center">
+                    <div class="dot-c">
+                        <img src="./images/stamp.png" alt="stamp" class="clip1">
+                    </div>
+                    <h3 class="content">What is in your mind?</h3>
+                    <div class="create-b"></div>
+                    <textarea type="text" id="input" class="create"></textarea>
+                    <div class="new-b"  style="background-color: #ffb3b3;"></div>
+                    <button class="save" onclick={addElement()}>PUSH</button>
                 </div>
             </div>
-        </div>
-
-        <!--Update page-->
-        <div id="update" class="create-p tab-pane" style="background-color: #9966ff;">
-            <div class="dot-s1">
-                <div class="dot-c"></div>
-                <img src="./images/stamp.png" alt="stamp" class="clip1">
-                <h3 class="content" >Update your task...</h3>
-                <div class="content-u" id="updates">
-
+    
+            <!--Task Page-->
+            <div id="tasks" class="task-p tab-pane">
+                <div class="dot-s1 d-flex justify-content-center">
+                    <div class="dot-t"></div>
+                    <img src="./images/stamp.png" alt="stamp" class="clip">
+                    <h3 id="title">Tasks</h3>
+                    <div  id="task">
+                        
+                    </div>
                 </div>
-                <div class="new-b"  style="background-color: #ffb3b3;"></div>
-                <button class="save" type="submit" onclick={Onsubmit()}>SAVE</button>
+            </div>
+    
+            <!--Update page-->
+            <div id="update" class="create-p tab-pane" style="background-color: #9966ff;">
+                <div class="dot-s1 d-flex justify-content-center">
+                    <div class="dot-c">
+                        <img src="./images/stamp.png" alt="stamp" class="clip1">
+                    </div>
+                    <h3 class="content" >Update your task...</h3>
+                    <div class="content-u" id="updates">
             
+                    </div>
+                    <div class="new-b"  style="background-color: #ffb3b3;"></div>
+                    <button class="save" type="submit" onclick={Onsubmit()}>SAVE</button>
+                </div>
             </div>
-        </div>
+        </div>    
+
     </div>
     
    
