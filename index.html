@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="./index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -15,29 +14,23 @@
 <body>
     <div class="container d-flex justify-content-center">
         <ul class="nav d-flex justify-content-center">
-            <div class="col-4 d-flex justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" onclick="console.log('create')" data-toggle="tab" href="#create"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </li>
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tasks"><i class="fa fa-tasks" aria-hidden="true"></i></a>
-                </li>
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#update"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
-                </li>
-            </div>
+            <li class="col-4  d-flex justify-content-center nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#create"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </li>
+            <li class="col-4  d-flex justify-content-center nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tasks"><i class="fa fa-tasks" aria-hidden="true"></i></a>
+            </li>
+            <li class="col-4  d-flex justify-content-center nav-item">
+              <a class="nav-link" data-toggle="tab" href="#update"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+            </li>
         </ul>
-    
+    </div>
         
         
         <div class="tab-content">
     
             <!--Create Page-->
-            <div id="create" class="create-p tab-pane active ">
+            <div id="create" class="create-p tab-pane active">
                 <div class="dot-s1 d-flex justify-content-center">
                     <div class="dot-c">
                         <img src="./images/stamp.png" alt="stamp" class="clip1">
@@ -76,11 +69,12 @@
                     <button class="save" type="submit" onclick={Onsubmit()}>SAVE</button>
                 </div>
             </div>
+
         </div>    
 
-    </div>
     
-   
+    
+    <script src="./index.js"></script>
     
 </body>
 </html>
